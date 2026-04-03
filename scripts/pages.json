@@ -1,0 +1,38 @@
+[
+	{
+        "title": "Timeline of United States History",
+        "url": "/pages/united_states_timeline.html",
+		"tags": ["timeline"],
+		"description": ""
+    },
+	{
+        "title": "1904 United States Presidential Election",
+        "url": "/pages/united_states_1904_presidential.html",
+		"tags": ["election"],
+		"description": "An election held in 1904..."
+    },
+	{
+        "title": "1904-1905 United States Senate Elections",
+        "url": "/pages/united_states_1904_senate.html",
+		"tags": ["election"],
+		"description": "An election held in 1904..."
+    },
+	{
+        "title": "1904 United States Gubernatorial Elections",
+        "url": "/pages/united_states_1904_gubernatorial.html",
+		"tags": ["election"],
+		"description": "An election held in 1904..."
+    },
+	{
+        "title": "1905 New York City Mayoral Election",
+        "url": "/pages/new_york_city_1905_mayoral.html",
+		"tags": ["election"],
+		"description": "An election held in 1905..."
+    },
+	{
+        "title": "Norman Mattoon Thomas",
+        "url": "/pages/united_states_norman_thomas.html",
+		"tags": ["socialist"],
+		"description": ""
+    }
+]

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+		<title>The Red Liberty Wiki</title>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<header class="topbar">
+			<div class="topbar-left">
+				<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+				<span class="logo">Red Liberty Wiki</span>
+			</div>
+
+			<div class="topbar-right">
+				<div class="search-container">
+					<input type="text" id="search-box" placeholder="Search..." autocomplete="off">
+					<div id="search-results" class="search-results"></div>
+				</div>
+			</div>
+		</header>
+		
+		<div class="sidebar" id="sidebar">
+			<h3>Navigation</h3>
+			<a href="#">Main page</a>
+			<a href="recent_changes.html">Recent changes</a>
+			<a href="#" onclick="goToRandomPage(event)">Random page</a>
+			<a href="#">About</a>
+		</div>
+		
+		<div class="container clearfix">
+			<h1>The Red Liberty Wiki</h1>
+
+			<!-- Infobox -->
+			<table class="infobox">
+				<tr>
+					<th colspan="2">Sample Infobox</th>
+				</tr>
+				<tr>
+					<td colspan="2" class="infobox-image">
+						<img src="images/roundel_smaller.png" alt="Sample image">
+						<div class="infobox-caption">
+							Sample image caption describing the subject.
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Released</b></td>
+					<td>December 31st, 2022</td>
+				</tr>
+			</table>
+			
+			<p>
+				Red Liberty is an alternate history mod for Hearts of Iron IV, exploring a world in which the Socialist Party of America was victorious under the leadership of Eugene V. Debs, unseating the Republican Party in the political mainstream. Not all is well, however; the world stands at a precipice, with the Great War having ended in a stalemate, the Russian Civil War having stalled at the Urals, and the Austro-Hungarian Empire hanging on by a thread. Democratic Socialism has seen great successes, but it remains to be seen whether or not it will be enough to hold together a world on the brink of yet another catastrophic war.
+			</p>
+			
+			<h2>About the Wiki</h2>
+			<p>
+				The Red Liberty Wiki is the central repository for canonical lore and background information related to the Red Liberty timeline. Articles are written from a (mostly) neutral, in-universe perspective as of 1936.
+			</p>
+			
+			<h2>Community</h2>
+			<ul>
+				<li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2909950530">Steam Workshop</a></li>
+				<li>GitHub</li>
+				<li>Discord</li>
+			</ul>
+			
+			<h2>Recommended Reading</h2>
+			<ul>
+				<li><a href="pages/united_states_timeline.html">Timeline of U.S. History</a></li>
+				<li><a href="pages/united_states_list_of_presidents.html">List of U.S. Presidents</a></li>
+			</ul>
+		</div>
+	</body>
+	
+	<script src="scripts/randompage.js"></script>
+</html>

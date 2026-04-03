@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+		<title>The Red Liberty Wiki</title>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	
+	<body>
+		<header class="topbar">
+			<div class="topbar-left">
+				<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+				<span class="logo">Red Liberty Wiki</span>
+			</div>
+
+			<div class="topbar-right">
+				<button onclick="search()" id="searchButton"><i class="fa fa-search"></i></button>
+				<input type="text" placeholder="Search..." class="search-box">
+			</div>
+		</header>
+		
+		<div class="sidebar" id="sidebar">
+			<h3>Navigation</h3>
+			<a href="index.html">Main page</a>
+			<a href="#">Recent changes</a>
+			<a href="#" onclick="goToRandomPage(event)">Random page</a>
+			<a href="#">About</a>
+		</div>
+		
+		<div class="container clearfix">
+			<h1>Recently Changed Pages</h1>
+			<p>
+				This article lists pages with the most recent changes, both large and small.
+			</p>
+			
+			<h2>New Additions</h2>
+			<p>
+				This section lists brand-new pages added to the wiki.
+			</p>
+			<ul>
+				<li><a href="pages/united_states_timeline.html">Timeline of U.S. History</a></li>
+				<li></li>
+				<li></li>
+			</ul>
+			
+			<h2>Significantly Rewritten</h2>
+			<p>
+				This section lists pages that have been substantially changed from their previous version.
+			</p>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			
+		</div>
+	</body>
+	
+	<script src="scripts/randompage.js"></script>
+</html>

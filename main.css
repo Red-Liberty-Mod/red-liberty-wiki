@@ -1,0 +1,399 @@
+/* ===== Top Navigation Bar ===== */
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	background-color: #333;
+	color: #f2f2f2;
+    border-bottom: 1px solid #a2a9b1;
+    padding: 8px 16px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.search-box {
+    padding: 5px;
+    border: 1px solid #a2a9b1;
+    border-radius: 2px;
+}
+
+/* Hamburger button */
+.menu-toggle {
+    font-size: 1.2em;
+    margin-right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+	color: #f2f2f2;
+}
+
+/* ===== Layout adjustments ===== */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    margin-left: 220px;
+}
+
+/* ===== Sidebar (desktop) ===== */
+.sidebar {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #f8f9fa;
+    border-right: 1px solid #a2a9b1;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+/* ===== Mobile Styles ===== */
+@media screen and (max-width: 768px) {
+
+    .container {
+        margin-left: 0;
+        padding: 15px;
+    }
+
+    .sidebar {
+        position: fixed;
+        left: -220px;
+        top: 50px;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .search-box {
+        width: 120px;
+    }
+}
+
+/* Base typography */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Linux Libertine", Georgia, Times, serif;
+    background-color: #f8f9fa;
+    color: #202122;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #a2a9b1;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+    font-family: "Linux Libertine", Georgia, Times, serif;
+    font-weight: normal;
+    color: #000;
+    margin-top: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #a2a9b1;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+/* Links */
+a {
+    color: #0645ad;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #0b0080;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Infobox-style table */
+.infobox {
+    float: right;
+    width: 400px;
+    margin: 0 0 1em 1em;
+    background: #f8f9fa;
+    border: 1px solid #a2a9b1;
+    font-size: 0.9em;
+}
+
+.infobox th {
+    background: #eaecf0;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.infobox td {
+    padding: 5px;
+    border-top: 1px solid #a2a9b1;
+}
+
+/* Infobox image styling */
+.infobox-image {
+    text-align: center;
+    padding: 5px;
+}
+
+.infobox-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Caption under infobox image */
+.infobox-caption {
+    font-size: 0.85em;
+    color: #54595d;
+    margin-top: 4px;
+}
+
+/* Table styling */
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    font-size: 0.9em;
+}
+
+th, td {
+    border: 1px solid #a2a9b1;
+    padding: 6px 10px;
+}
+
+th {
+    background-color: #eaecf0;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 200px;
+    float: left;
+    background: #f8f9fa;
+    border-right: 1px solid #a2a9b1;
+    padding: 10px;
+}
+
+.sidebar a {
+    display: block;
+    margin: 4px 0;
+}
+
+/* Code blocks */
+pre, code {
+    font-family: "Courier New", monospace;
+    background: #f6f6f6;
+    border: 1px solid #a2a9b1;
+    padding: 5px;
+}
+
+/* Blockquotes */
+blockquote {
+    border-left: 3px solid #a2a9b1;
+    margin: 1em;
+    padding-left: 10px;
+    color: #54595d;
+}
+
+/* Footer */
+.footer {
+    font-size: 0.8em;
+    color: #54595d;
+    border-top: 1px solid #a2a9b1;
+    margin-top: 2em;
+    padding-top: 10px;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Thumbnail / image container */
+.thumb {
+    width: 250px;
+    float: right;
+    margin: 0 0 1em 1em;
+    border: 1px solid #c8ccd1;
+    background-color: #f8f9fa;
+    font-size: 0.9em;
+}
+
+/* Inner wrapper */
+.thumbinner {
+    padding: 3px;
+}
+
+/* Image itself */
+.thumb img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Caption */
+.thumbcaption {
+    padding: 3px;
+    color: #202122;
+}
+
+/* Left-aligned thumbnail option */
+.thumb-left {
+    float: left;
+    margin: 0 1em 1em 0;
+}
+
+/* Centered image (like gallery style) */
+.thumb-center {
+    float: none;
+    margin: 1em auto;
+    display: block;
+}
+
+/* Title styling */
+.election-infobox .infobox-title {
+    font-size: 1.4em;
+    text-align: center;
+    background: #e1e4e8;
+}
+
+/* Standard election image */
+.election-infobox .candidate-image img {
+    width: 110px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Candidate row format */
+.election-infobox .candidate-row td {
+    vertical-align: middle;
+    padding: 6px;
+    border-top: 1px solid #a2a9b1;
+}
+
+/* Candidate details */
+.election-infobox .candidate-details {
+    font-size: 0.9em;
+}
+
+/* Overall spacing */
+.election-infobox img {
+    border: 1px solid #c8ccd1;
+}
+
+/* Alternate shading for rows */
+.election-infobox .candidate-row:nth-child(even) {
+    background: #fafafa;
+}
+
+/* Table of Contents (sidebar) */
+.toc {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+.toc h3 {
+    margin-top: 10px;
+    border-bottom: 1px solid #a2a9b1;
+    font-size: 1em;
+}
+
+.toc ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.toc li {
+    margin: 4px 0;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #0645ad;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+.search-container {
+    position: relative; /* this ensures results box aligns with input */
+    width: 250px; /* match your input width */
+    max-width: 90vw; /* never go wider than viewport */
+}
+
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: auto; /* reset in case it was set */
+    width: 100%; /* match input width */
+    max-width: 400px; /* optional limit */
+    background: white;
+	color: #333;
+    border: 1px solid #a2a9b1;
+    max-height: 300px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1000;
+
+    /* Make sure it wraps inside viewport */
+    box-sizing: border-box;
+}
+
+.search-result {
+    padding: 6px;
+    cursor: pointer;
+}
+
+.search-result:hover {
+    background: #eaecf0;
+}
+
+.reference-tooltip {
+    position: relative;
+    cursor: pointer;
+}
+
+.reference-tooltip span {
+    display: none;
+    position: absolute;
+    background: #fff;
+    border: 1px solid #a2a9b1;
+    padding: 5px;
+    width: 200px;
+    z-index: 1000;
+}
+
+.reference-tooltip:hover span {
+    display: block;
+}
