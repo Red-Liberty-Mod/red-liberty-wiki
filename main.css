@@ -1,4 +1,4 @@
-/* ===== Top Navigation Bar ===== */
+/* Topbar */
 .topbar {
     display: flex;
     justify-content: space-between;
@@ -23,7 +23,7 @@
     border-radius: 2px;
 }
 
-/* Hamburger button */
+/* 'Hamburger' button */
 .menu-toggle {
     font-size: 1.2em;
     margin-right: 10px;
@@ -33,7 +33,7 @@
 	color: #f2f2f2;
 }
 
-/* ===== Layout adjustments ===== */
+/* Layout adjustments */
 body {
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ body {
     margin-left: 220px;
 }
 
-/* ===== Sidebar (desktop) ===== */
+/* Sidebar (desktop) */
 .sidebar {
     position: fixed;
     top: 50px;
@@ -56,7 +56,7 @@ body {
     overflow-y: auto;
 }
 
-/* ===== Mobile Styles ===== */
+/* Mobile Styles */
 @media screen and (max-width: 768px) {
 
     .container {
@@ -99,6 +99,10 @@ body {
     border: 1px solid #a2a9b1;
 }
 
+/* .container td {
+    padding: 0.2em 0.4em;
+} */
+
 /* Headings */
 h1, h2, h3, h4, h5 {
     font-family: "Linux Libertine", Georgia, Times, serif;
@@ -133,6 +137,17 @@ a:visited {
 
 a:hover {
     text-decoration: underline;
+}
+
+a.external::after {
+	content: "";
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-left: 2px;
+    background-image: url('images/external_link.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 /* Infobox-style table */
